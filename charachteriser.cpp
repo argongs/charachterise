@@ -100,7 +100,7 @@ int main (int argc, char** argv )
 		if (res_ptr[i] < threshold)
 		{
 			//There's an important point to notice over here : rows change vertically and columns change horizontally. Hence, columns correspond to 'x' coordinate and rows correspond to 'y' coordinate. And we're accessing the 'result' obtained from template matching in result[row][column] manner. Hence, we need to keep in mind that result[row][column] actually corresponds to the (x = column, y = row) coordinate of the image. This is the reason why we have mentioned Point(col, row) and not Point(row, col) below.
-			rectangle (roi_mask, Point (col, row), Point (col+textSize.height, row+textSize.width), Scalar (255), FILLED);
+			rectangle (roi_mask, Point (col, row), Point (col+textSize.width, row+textSize.height), Scalar (255), FILLED);
 		}
 	
 		//Update the row, col value depending upon the index of the current element that is being accessed
