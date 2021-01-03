@@ -4,7 +4,7 @@ A small tool to convert your images filled with pixels into an image filled with
 ## What does that mean anyway?
 See the 2 images below:
 
-<img src="images/ubuntu.png" width="300" height="300"/> <img src="result.png" width="300" height="300"/>
+<img src="images/ubuntu.png" width="300" height="300"/> <img src="images/sample_result.png" width="300" height="300"/>
 
 The first image was acquired from [here](https://design.ubuntu.com/downloads/) and the second image was obtained after transforming the first image via the `charachteriser`. The program simply took the charachter 'u' and placed it everywhere it could find a white region big enough to hold a 'u' charachter (which has unit font scale and has been created with lines of unit thickness of [Hershey Plain](https://codeyarns.com/tech/2015-03-11-fonts-in-opencv.html) type font in OpenCV).
 
@@ -20,3 +20,12 @@ So simply put, the following steps has been followed by `charachteriser` to gene
 * [GCC](https://gcc.gnu.org/) 7.5.0
 
 Using the above set of softwares, `charachteriser` has been tested on Ubuntu 18.04.03.
+
+## So how do you use it?
+Just execute the 'execute.sh' file in the following way:
+
+`$ bash execute.sh charachteriser.cpp [address_to_image] [pattern_string]`
+
+For example, to generate the transformation shown above, you'll need to hit the following command:
+
+`$ bash execute.sh charachteriser.cpp images/ubuntu.png u`
