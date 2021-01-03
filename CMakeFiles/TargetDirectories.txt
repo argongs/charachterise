@@ -1,3 +1,0 @@
-/home/sk/playground/incrementingC++/image_process/CMakeFiles/rebuild_cache.dir
-/home/sk/playground/incrementingC++/image_process/CMakeFiles/exec_binary.dir
-/home/sk/playground/incrementingC++/image_process/CMakeFiles/edit_cache.dir

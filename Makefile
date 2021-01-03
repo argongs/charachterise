@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sk/playground/incrementingC++/image_process
+CMAKE_SOURCE_DIR = /home/sk/playground/incrementingC++/charachterise
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sk/playground/incrementingC++/image_process
+CMAKE_BINARY_DIR = /home/sk/playground/incrementingC++/charachterise
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sk/playground/incrementingC++/image_process/CMakeFiles /home/sk/playground/incrementingC++/image_process/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sk/playground/incrementingC++/charachterise/CMakeFiles /home/sk/playground/incrementingC++/charachterise/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sk/playground/incrementingC++/image_process/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sk/playground/incrementingC++/charachterise/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ exec_binary/fast:
 	$(MAKE) -f CMakeFiles/exec_binary.dir/build.make CMakeFiles/exec_binary.dir/build
 .PHONY : exec_binary/fast
 
-wallpaper_creator.o: wallpaper_creator.cpp.o
+charachteriser.o: charachteriser.cpp.o
 
-.PHONY : wallpaper_creator.o
+.PHONY : charachteriser.o
 
 # target to build an object file
-wallpaper_creator.cpp.o:
-	$(MAKE) -f CMakeFiles/exec_binary.dir/build.make CMakeFiles/exec_binary.dir/wallpaper_creator.cpp.o
-.PHONY : wallpaper_creator.cpp.o
+charachteriser.cpp.o:
+	$(MAKE) -f CMakeFiles/exec_binary.dir/build.make CMakeFiles/exec_binary.dir/charachteriser.cpp.o
+.PHONY : charachteriser.cpp.o
 
-wallpaper_creator.i: wallpaper_creator.cpp.i
+charachteriser.i: charachteriser.cpp.i
 
-.PHONY : wallpaper_creator.i
+.PHONY : charachteriser.i
 
 # target to preprocess a source file
-wallpaper_creator.cpp.i:
-	$(MAKE) -f CMakeFiles/exec_binary.dir/build.make CMakeFiles/exec_binary.dir/wallpaper_creator.cpp.i
-.PHONY : wallpaper_creator.cpp.i
+charachteriser.cpp.i:
+	$(MAKE) -f CMakeFiles/exec_binary.dir/build.make CMakeFiles/exec_binary.dir/charachteriser.cpp.i
+.PHONY : charachteriser.cpp.i
 
-wallpaper_creator.s: wallpaper_creator.cpp.s
+charachteriser.s: charachteriser.cpp.s
 
-.PHONY : wallpaper_creator.s
+.PHONY : charachteriser.s
 
 # target to generate assembly for a file
-wallpaper_creator.cpp.s:
-	$(MAKE) -f CMakeFiles/exec_binary.dir/build.make CMakeFiles/exec_binary.dir/wallpaper_creator.cpp.s
-.PHONY : wallpaper_creator.cpp.s
+charachteriser.cpp.s:
+	$(MAKE) -f CMakeFiles/exec_binary.dir/build.make CMakeFiles/exec_binary.dir/charachteriser.cpp.s
+.PHONY : charachteriser.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... exec_binary"
 	@echo "... edit_cache"
-	@echo "... wallpaper_creator.o"
-	@echo "... wallpaper_creator.i"
-	@echo "... wallpaper_creator.s"
+	@echo "... charachteriser.o"
+	@echo "... charachteriser.i"
+	@echo "... charachteriser.s"
 .PHONY : help
 
 

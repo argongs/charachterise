@@ -12,9 +12,9 @@ using namespace cv;
 int main (int argc, char** argv )
 {
     	//Check image
-    	if ( argc != 2 )
+    	if ( argc != 3 )
     	{
-        	std::cout<<"usage: exec_binary <Image_Path>\n";
+        	std::cout<<"usage: exec_binary <Image_Path> <pattern_string>\n";
         	return -1;
     	}
     
@@ -31,7 +31,7 @@ int main (int argc, char** argv )
 	Mat anded_output = Mat::zeros (image.size (), CV_8UC3);
 	//Create pattern image
 	//Define how the pattern string should look like
-	std::string pattern_str ("u");
+	std::string pattern_str (argv[2]);
 	int font = FONT_HERSHEY_PLAIN;
 
 	//First get a precise idea of how much area will the string(that'll be used to create the pattern) will take	

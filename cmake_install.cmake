@@ -1,4 +1,4 @@
-# Install script for directory: /home/sk/playground/incrementingC++/image_process
+# Install script for directory: /home/sk/playground/incrementingC++/charachterise
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sk/playground/incrementingC++/image_process/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sk/playground/incrementingC++/charachterise/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
